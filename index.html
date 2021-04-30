@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+      @keyframes border-appear1 {
+        0% {border-width:0% 0% 0% 0%;color:#404040;}
+        100% {border-width:0% 0% 3% 0%;color:whitesmoke;}
+      }
+
+      @keyframes border-appear2 {
+        0% {border-width:0% 0% 0% 0%;color:whitesmoke;}
+        100% {border-width:0% 0% 3% 0%;color:#404040;}
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        margin: 0% 2% 0% 2%;
+        width: 96%;
+      }
+
+      .col-first h1:hover {
+        animation-name: border-appear1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      .col-second h1:hover {
+        animation-name: border-appear2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      .col-first {
+        flex: 32%;
+        height: 30rem;
+        border: solid;
+        border-width: 0px 2px 0px 2px;
+        padding: 20px 40px 20px 40px;
+        background-color: #404040;
+        color: whitesmoke;
+      }
+
+      .col-second {
+        flex: 32%;
+        height: 30rem;
+        border: solid;
+        border-width: 0px 2px 0px 2px;
+        padding: 20px 40px 20px 40px;
+        background-color: whitesmoke;
+        color: #404040;
+      }
+
+      .btn-dark {
+        background-color: whitesmoke;
+        color:#404040;
+        border: solid 2px;
+        border-radius: 8px;
+        width: 200px;
+        height: 2rem;
+      }
+
+      .btn-dark:hover {
+        background-color: #404040;
+        color:whitesmoke;
+        border: solid 2px;
+        border-radius: 8px;
+        width: 200px;
+        height: 2rem;
+      }
+
+      .btn-light {
+        background-color: #404040;
+        color:whitesmoke;
+        border: solid 2px;
+        border-radius: 8px;
+        width: 200px;
+        height: 2rem;
+      }
+
+      .btn-light:hover {
+        background-color: whitesmoke;
+        color:#404040;
+        border: solid 2px;
+        border-radius: 8px;
+        width: 200px;
+        height: 2rem;
+      }
+
+      @media (max-width:491px){
+        .row {
+          display: flex;
+          flex-direction: column;
+          margin: 0% 2% 0% 2%;
+          width: 96%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-first">
+        <img src="images/icon-sedans.svg"><br/>
+        <h1>SEDANS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas incidunt sapiente reiciendis ducimus quos laboriosam reprehenderit a expedita consequatur, deleniti omnis et doloribus eveniet blanditiis qui error labore atque.</p>
+        <button class="btn-light">Learn More</button>
+      </div>
+      <div class="col-second">
+        <img src="images/icon-suvs.svg"><br/>
+        <h1>SUVS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas incidunt sapiente reiciendis ducimus quos laboriosam reprehenderit a expedita consequatur, deleniti omnis et doloribus eveniet blanditiis qui error labore atque.</p>
+        <button class="btn-dark">Learn More</button>
+      </div>
+      <div class="col-first">
+        <img src="images/icon-luxury.svg"><br/>
+        <h1>LUXURY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas incidunt sapiente reiciendis ducimus quos laboriosam reprehenderit a expedita consequatur, deleniti omnis et doloribus eveniet blanditiis qui error labore atque.</p>
+        <button class="btn-light">Learn More</button>
+      </div>
+    </div>
+    <div class="attribution">
+      <h1>Challenge by <button class="btn-dark" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</button><br/>
+      Coded by <button class="btn-dark" href="#">UDCoder-142</button> </h1>
+    </div>
+  </body>
+</html>
